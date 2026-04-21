@@ -21,9 +21,14 @@ class BurgerMeal:
         self.cheese = cheese
         self.drink = drink
 
+    def to_string(self) -> str:
+        return (
+            f"Bun: {self.bun_type}\nPatty: {self.patty}\nCheese: {self.cheese}\nDrink: {self.drink}\nSides: {self.sides}\nDrink: {self.drink}")
+
 def main():
     # Keyword arguments help readability in Python
     plain_burger = BurgerMeal(bun_type="wheat", patty="veg")
+    print(plain_burger.to_string())
 
 if __name__ == "__main__":
     main()
