@@ -23,7 +23,7 @@ class BurgerMeal:
 
     def to_string(self) -> str:
         return (
-            f"Bun: {self.bun_type}\nPatty: {self.patty}\nCheese: {self.cheese}\nDrink: {self.drink}\nSides: {self.sides}\nDrink: {self.drink}")
+            f"Bun: {self.bun_type}\nPatty: {self.patty}\nCheese: {self.cheese}\nToppings: {self.toppings}\nSides: {self.sides}\nDrink: {self.drink}")
 
 def main():
     # Keyword arguments help readability in Python
