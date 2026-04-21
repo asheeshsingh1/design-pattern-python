@@ -1,0 +1,29 @@
+@startuml
+
+class BurgerMeal {
+  bun_type: str
+  patty: str
+  has_cheese: bool
+  toppings: List[str]
+  side: Optional[str]
+  drink: Optional[str]
+}
+
+class BurgerBuilder {
+  _bun_type: str
+  _patty: str
+  _has_cheese: bool
+  _toppings: List[str]
+  _side: Optional[str]
+  _drink: Optional[str]
+
+  with_cheese(bool)
+  with_toppings(List[str])
+  with_side(str)
+  with_drink(str)
+  build(): BurgerMeal
+}
+
+BurgerBuilder --> BurgerMeal : builds
+
+@enduml
